@@ -9,4 +9,5 @@ This project is the backend application of the project `Be Hero`. The complement
 To start the application: 
   ### `npm start`
 
-Frameworks and libraries: - Express
+### Frameworks and libraries 
+  - Express
