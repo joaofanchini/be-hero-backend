@@ -1,7 +1,12 @@
-#Backend of Be Hero application.
+This project was bootstrapped with [npm init -Y](https://expressjs.com/pt-br/starter/installing.html)
 
-Application created with npm init -Y
+### Goal
+This project is the backend application of the project `Be Hero`. The complement repositoies are following bellow:
+  - [frontend web application] (https://github.com/joaofanchini/be-hero-frontend-web.git)
 
-Command to start: npm start.
+### Available scripts
+
+To start the application: 
+  ### `npm start`
 
 Frameworks and libraries: - Express
