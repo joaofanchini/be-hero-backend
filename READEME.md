@@ -1,7 +1,7 @@
 This project was bootstrapped with [npm init -Y](https://expressjs.com/pt-br/starter/installing.html)
 
 ### Goal
-This project is the backend application of the project `Be Hero`. The complement repositoies are following bellow:
+This project is the backend application of the project `Be Hero`. The complement repositories are following bellow:
   - [frontend web application](https://github.com/joaofanchini/be-hero-frontend-web.git)
 
 ### Available scripts
