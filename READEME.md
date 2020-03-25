@@ -16,3 +16,9 @@ To start the application:
 
 - Express
 - Nodemon (dev dependecies)
+- Banco de dados (SQLite - banco em arquivo txt) - driver sqlite3
+- KNEX.JS (query builder sql)
+
+### Info
+
+To create the knex file, run `npx knex init`. With this you can accesss the knexfile where you can set the configuration of the database.
