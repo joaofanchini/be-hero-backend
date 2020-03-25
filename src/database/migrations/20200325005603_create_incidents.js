@@ -1,18 +1,20 @@
 const TABLE_NAME = 'INCIDENTS';
-const ONGS_TABLE_NAME = 'ONGS';
 
 exports.up = function(knex) {
-  knex.schema.createTable(TABLE_NAME, table => {
-    table.increment('id');
+  return knex.schema.createTable(TABLE_NAME, table => {
+    table.increments('id');
     table.string('title').notNullable();
     table.decimal('value').notNullable();
     table.string('ong_id').notNullable();
     table.string('description').notNullable();
 
-    table.foreign('ong_id').references('INCIDENTS.ong_id');
+    table
+      .foreign('ong_id')
+      .references('id')
+      .inTable('ONGS');
   });
 };
 
 exports.down = function(knex) {
-  knex.schema.dropTable(TABLE_NAME);
+  return knex.schema.dropTable(TABLE_NAME);
 };

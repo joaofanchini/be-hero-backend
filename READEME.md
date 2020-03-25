@@ -18,6 +18,8 @@ To start the application:
 - Nodemon (dev dependecies)
 - Banco de dados (SQLite - banco relacional de simples manuseio para desenvolvimento) - driver sqlite3
 - KNEX.JS (query builder sql) - Junto ao Migration CLI
+- Cors module(npm install cors)
+- Crypto
 
 ### Info run
 

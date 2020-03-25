@@ -1,29 +1,27 @@
 // Arquivo responsável pelas rotas de nossa aplicação
 const express = require('express');
 
+const ongController = require('./controller/ongController');
+const incidentController = require('./controller/incidentController');
+const profileController = require('./controller/profileController');
+const sessionController = require('./controller/sessionController');
+
 // Elemento responsável pelo gerenciamento de rotas dentro do Express
-const router = express.Router();
+const routes = express.Router();
 
-/** Tipos de parâmetros
- *
- * QueryString (?{parametro}={value})
- *    request.query; => Retorna todos as queryStrings enviadas.
- *
- * Route Parameters (/{:parametro})
- *    request.params; => Retorna todos as variáveis de rota enviadas.
- *
- * Request Body (Para a aplicação conseguir entender o
- *    payload de cada requisição é necessário indicar qual será o
- *    content-type que será consumido)
- *    request.body; => Acessado todo o objeto.
- *
- */
+// Cadastrar e listar todas as ongs
+routes.post('/ongs', ongController.create);
+routes.get('/ongs', ongController.getAllOngs);
 
-routes.get('/', (req, resp) => {
-  return resp.json({
-    evento: 'Semana de treinamento OmniStack',
-    nome: 'João Victor'
-  });
-}); // definindo o primeiro GET da aplicação
+// Criar, listar e deletar incidentes
+routes.post('/incident', incidentController.create);
+routes.get('/incident', incidentController.getAllIncidents);
+routes.delete('/incident/:id', incidentController.delete);
+
+// Listar incidentes por ongs
+routes.get('/profile', profileController.incidentsByOngs);
+
+// Login
+routes.post('/session', sessionController.login);
 
 module.exports = routes;
