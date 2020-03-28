@@ -20,7 +20,7 @@ module.exports = {
         city,
         uf
       })
-      .then(resp.json({ idOng }))
+      .then(resp.json({ id: idOng }))
       .catch(resp.status(400).json({ error: 'Error while sign up ong' }));
   },
   async getAllOngs(req, resp) {
