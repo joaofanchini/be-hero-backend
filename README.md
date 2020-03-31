@@ -4,7 +4,8 @@ This project was bootstrapped with [npm init -Y](https://expressjs.com/pt-br/sta
 
 This project is the backend application of the project `Be Hero`. The complement repositories are following bellow:
 
-- [frontend web application](https://github.com/joaofanchini/be-hero-frontend-web.git)
+- [frontend web application](https://github.com/joaofanchini/be-hero-frontend-web)
+- [app mobile](https://github.com/joaofanchini/be-hero-mobile)
 
 ### Available scripts
 
